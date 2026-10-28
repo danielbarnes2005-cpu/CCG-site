@@ -955,7 +955,41 @@
       font-size: 0.88rem;
       line-height: 1.7;
     }
-
+#resources { background: var(--off-white); }
+.resources-header { max-width: 640px; margin-bottom: 48px; }
+.resources-header p { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+.resources-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--blue-light);
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.resource-card {
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  opacity: 0.85;
+}
+.resource-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.resource-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px; }
+.resource-status { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
     /* ─── CONTACT ─────────────────────────────────────────── */
     #contact { background: var(--white); }
 
@@ -1324,6 +1358,7 @@
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#wic">WIC</a></li>
     <li><a href="#ccg">Centennial</a></li>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="https://pin.gsu.edu/organization/consultingclub" target="_blank" class="btn-join-nav">Join Now</a></li>
   </ul>
 
@@ -1955,6 +1990,33 @@
   </div>
 </section>
 
+  <!-- RESOURCES -->
+<section id="resources" class="reveal">
+  <div class="resources-header">
+    <div class="section-tag">Resources</div>
+    <h2>Case <em>Resources</em></h2>
+    <span class="resources-badge">Coming Soon</span>
+    <p>We're building a library of case prep materials for members. Check back soon.</p>
+  </div>
+
+  <div class="resources-grid">
+    <div class="resource-card">
+      <h3>Case Library</h3>
+      <p>Practice cases across industries and difficulty levels.</p>
+      <span class="resource-status">Coming soon</span>
+    </div>
+    <div class="resource-card">
+      <h3>Frameworks &amp; Guides</h3>
+      <p>Structuring, market sizing, and math refreshers.</p>
+      <span class="resource-status">Coming soon</span>
+    </div>
+    <div class="resource-card">
+      <h3>Interview Prep</h3>
+      <p>Behavioral prep and firm-specific recruiting tips.</p>
+      <span class="resource-status">Coming soon</span>
+    </div>
+  </div>
+</section>
 
 
 <!-- CONTACT -->
